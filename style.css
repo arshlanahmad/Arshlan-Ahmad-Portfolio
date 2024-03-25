@@ -11,6 +11,11 @@ body{
 background-color: #080808;
 color: #fff;
 
+
+
+
+
+
 }
 #header {
     width: 100%;
@@ -20,13 +25,13 @@ color: #fff;
     background-repeat: no-repeat; /* Prevent the background image from repeating */
     background-position: right; /* Set background image position to right */
 }
-
-
-
-
 .container{
     padding: 10px 10%;
     
+}
+.container nav ul li {
+    display: inline-block;
+    margin-right: 50px; /* Adjust the margin as needed */
 }
 .nav{
     display: flex;
@@ -51,7 +56,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #7085a0;
+    background: #e80850;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -70,12 +75,12 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: #7085a0;
+    color: #e80850;
 }
 /* ------about----- */
 #about{
     padding: 80px 0;
-    color: #7085a0;
+    color: #ffffff;
 }
 .row{
     display: flex;
@@ -105,7 +110,7 @@ nav ul li a:hover::after{
 .tab-links{
 margin-right: 50px;
 font-size: 18px;
-color: #fff;
+color: #ffffff;
 cursor: pointer;
 position: relative;
 }
@@ -113,7 +118,7 @@ position: relative;
     content: '';
     width: 0;
     height: 3px;
-    background: #7085a0;
+    background: #e80850;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -123,7 +128,7 @@ position: relative;
     width: 50%;
 }
 .aboutp{
-    color: #fff;
+    color: #7085a0;
 }
 /* skills Cotents */
 .tab-contents ul li{
@@ -132,146 +137,7 @@ position: relative;
 }
 /* skills Cotents */
 .tab-contents ul li span{
-    color: aqua;
-    font-size: 14px;
-}
-.tab-contents{
-    display: none;
-}
-.tab-contents.active-tab{
-    display: block;
-}*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-}
-body{
-background-color: #080808;
-color: #fff;
-
-}
-#header {
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/MyPhotoPng.png);
-    background-size: auto 100%; /* Set background image size to auto width and 100% height */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-    background-position: right; /* Set background image position to right */
-}
-
-
-
-
-.container{
-    padding: 10px 10%;
-    
-}
-.nav{
-    display: flex;
-    align-content: end;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-nav ul li{
-   display:  inline-block;
-   list-style: none;
-   margin: 10px 20px;
-
-
-}
-nav ul li a{
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-}
-nav ul li a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #7085a0;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-nav ul li a:hover::after{
-    width: 100%;
-}
-.header-text{
-    margin-top: 20%;
-    font-size: 30px;
-
-}
-.header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
-}
-.header-text h1 span{
-    color: #7085a0;
-}
-/* ------about----- */
-#about{
-    padding: 80px 0;
-    color: #7085a0;
-}
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.about-col-1{
-    flex-basis: 35%;
-}
-.about-col-1 img{
-    width: 100%;
-    border-radius: 15px;
-}
-.about-col-2{
-    flex-basis: 60%;
-}
-.sub-title{
-    font-size: 50px;
-    font-weight: 600;
-
-}
-.tab-titles{
-    display: flex;
-    margin: 20px 0 40px;
-
-}
-.tab-links{
-margin-right: 50px;
-font-size: 18px;
-color: #fff;
-cursor: pointer;
-position: relative;
-}
-.tab-links::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #7085a0;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
-}
-.tab-links.active-link::after{
-    width: 50%;
-}
-.aboutp{
-    color: #fff;
-}
-/* skills Cotents */
-.tab-contents ul li{
-    list-style: none;
-    margin: 10px 0;
-}
-/* skills Cotents */
-.tab-contents ul li span{
-    color: aqua;
+    color: #c70945;
     font-size: 14px;
 }
 .tab-contents{
@@ -311,19 +177,26 @@ position: relative;
     display: inline-block;
 }
 .service-list div:hover{
-    background: #ff004f;
+    background: #e80850;
     transform: translateY(-10px);
 }
 /* -----portfolio------ */
 #portfolio{
     padding: 50px 0;
 }
+.sub-title{
+    font-size: 50px;
+    font-weight: 600;
+
+}
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     grid-gap: 40px; 
 }
+
 .work{
+    margin-top: 50px;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
@@ -358,7 +231,7 @@ position: relative;
 }
 .layer a{
     margin-top: 20px;
-    color: #ff004f;
+    color: #e80850;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -378,7 +251,7 @@ position: relative;
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid #e80850;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -386,7 +259,7 @@ position: relative;
     transition: background 0.5s;
 }
 .btn:hover{
-    background: #ff004f;
+    background: #e80850;
 }
 
 /* }------contact----- */
@@ -400,7 +273,7 @@ position: relative;
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #ff004f;
+    color: #e80850;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -417,12 +290,12 @@ position: relative;
     transition: transform 0.5s;
 }
 .social-icon a:hover{
-    color: #ff004f;
+    color: #e80850;
     transform: translateY(-5px);
 }
 .btn.btn2{
 display: inline-block;
-background: #ff004f;
+background: #e80850;
 }
 .contact-right form{
     width: 100%;
@@ -453,7 +326,7 @@ form .bt2{
     margin-top: 20px;
 }
 .copyright i{
-    color: #ff004f;
+    color: #e80850;
 }
 nav .fa-solid{
     display: none;
@@ -477,7 +350,7 @@ nav .fa-solid{
         font-size: 25px;
     }
     nav ul{
-        background: #ff004f;
+        background: #e80850;
         position: fixed;
         top: 0;
         right: -200px;
