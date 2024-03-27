@@ -348,7 +348,7 @@ nav .fa-solid{
         transform: translateY(100%);
         border-radius: 10px;
         overflow-y: auto;
-        padding-bottom: 150px;
+        padding-bottom: 180px;
     }
     
     .layer.active {
@@ -356,7 +356,7 @@ nav .fa-solid{
     }
     
     .layer h3 {
-        margin: -220px 0 10px; /* Adjusted margin */
+        margin: -180px 0 10px; /* Adjusted margin */
         font-size: 16px;
         text-align: center;
     }
@@ -366,6 +366,11 @@ nav .fa-solid{
         margin-top: 10px;
         font-size: 10px;
         color: #fff;
+    }
+    .work {
+        display: flex;
+        justify-content: center; /* Horizontally center the items */
+        align-items: center; /* Vertically center the items */
     }
     
  .work img {
