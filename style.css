@@ -183,28 +183,33 @@ position: relative;
     font-weight: 600;
 
 }
-.work-list{
+.work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap: 40px; 
+    grid-template-columns: repeat(1, 1fr); /* Ensure each project is on its own line */
+    grid-gap: 40px;
 }
 
-.work{
+.work {
     margin-top: 50px;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap within the project container */
 }
-.work img{
-    width: 100%;
+
+.work img {
+    width: calc(100% / 6); /* Adjust for 6 images per row */
     border-radius: 10px;
     display: block;
-    transition: transform  0.5s;
+    transition: transform 0.5s;
 }
-.layer{
+
+
+.layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #000000);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #000000);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -216,11 +221,18 @@ position: relative;
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 18px; /* Increase the font size as needed */
     transition: 0.5s;
 }
+.layer p{
+    font-size: 20px;
+    font-style: unset;
+}
+
 .layer h3{
     font-weight: 500;
+    font-size: 40px;
+    font-style: inherit;
     margin-bottom: 20px;
 }
 .layer a{
@@ -327,6 +339,37 @@ nav .fa-solid{
 }
 /* --------css for small screen */
 @media only screen and (max-width: 600px){
+    .layer {
+        position: relative;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        transition: transform 0.3s ease;
+        transform: translateY(100%);
+        border-radius: 10px;
+        overflow-y: auto;
+        padding-bottom: 50px;
+    }
+    
+    .layer.active {
+        transform: translateY(0);
+    }
+    
+    .layer h3 {
+        margin: -55px 0 10px; /* Adjusted margin */
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .layer p {
+        margin: 0;
+        margin-top: 10px;
+        font-size: 10px;
+        color: #fff;
+    }
+    
+ 
+    
     #header{
         background-image: url(images/MyPhotoPng.png);
         background-size: 60%; 
