@@ -348,7 +348,7 @@ nav .fa-solid{
         transform: translateY(100%);
         border-radius: 10px;
         overflow-y: auto;
-        padding-bottom: 50px;
+        padding-bottom: 150px;
     }
     
     .layer.active {
@@ -356,7 +356,7 @@ nav .fa-solid{
     }
     
     .layer h3 {
-        margin: -55px 0 10px; /* Adjusted margin */
+        margin: -220px 0 10px; /* Adjusted margin */
         font-size: 16px;
         text-align: center;
     }
@@ -368,7 +368,10 @@ nav .fa-solid{
         color: #fff;
     }
     
- 
+ .work img {
+    width: 30%; /* Make the image width 100% */
+    height: auto; /* Maintain aspect ratio */
+}
     
     #header{
         background-image: url(images/MyPhotoPng.png);
