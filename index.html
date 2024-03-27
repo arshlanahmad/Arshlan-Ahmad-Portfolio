@@ -206,45 +206,5 @@ function opentab(tabname) {
         sidemeu.style.right = "-200px";
     }
    </script>
-<script>
-const isPhone = window.matchMedia("(max-width: 600px)").matches;
-
-if (isPhone) {
-    // Function to reset all active layers
-    function resetActiveLayers() {
-        const activeLayers = document.querySelectorAll('.layer.active');
-        activeLayers.forEach(layer => {
-            layer.classList.remove('active'); // Remove active class from all active layers
-        });
-    }
-
-    // Add event listener to each image
-    document.querySelectorAll('.work').forEach(item => {
-        item.addEventListener('click', event => {
-            const layer = item.querySelector('.layer');
-            const isActive = layer.classList.contains('active');
-
-            // Reset all active layers if clicked image's layer is not active
-            if (!isActive) {
-                resetActiveLayers();
-            }
-
-            // Toggle active class on click
-            layer.classList.toggle('active');
-
-            // Prevent click event from propagating to document body
-            event.stopPropagation();
-        });
-    });
-
-    // Add event listener to document body to reset the .layer element when clicked anywhere outside of it
-    document.body.addEventListener('click', event => {
-        resetActiveLayers(); // Reset all active layers
-    });
-}
-
-
-   </script>
-
 </body>
 </html>
