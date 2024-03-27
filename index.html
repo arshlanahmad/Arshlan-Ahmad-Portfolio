@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arshlan Ahmad Portfolio</title>
+    <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/6581404ce2.js" crossorigin="anonymous"></script>
 </head>
@@ -105,35 +105,46 @@
         <h1 class="sub-title">My Projects</h1>
         <div class="work-list">
             <div class="work">
-                <img src="images/1668347229084.jpg">
-                <div class="layer">
-                    <h3>Khaga Pharmacy App</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Reiciendis, architecto voluptatibus.
-                          Nulla dolor ad ullam dolore alias ratione ducimus quam architecto aspernatur libero maiores quasi a suscipit minima,
-                           ipsa hic!</p>
-                           <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/1668347229084.jpg">
+                <img src="images/ss1.png">
+                <img src="images/ss2.png">
+                <img src="images/ss3.png">
+                <img src="images/ss4.png">
+                <img src="images/ss5.png">
+                <img src="images/ss6.png">
                 <div class="layer">
                     <h3>Quizkart App</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Reiciendis, architecto voluptatibus.
-                          Nulla dolor ad ullam dolore alias ratione ducimus quam architecto aspernatur libero maiores quasi a suscipit minima,
-                           ipsa hic!</p>
+                    <p>My initial Java/XML project, providing educational content and quizzes for users to explore topics and test their 
+                        knowledge.</p>
+                        <a href="https://github.com/arshlanahmad/Quizkart-Project" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/ss1.png">
+                <img src="images/ss2.png">
+                <img src="images/ss3.png">
+                <img src="images/ss4.png">
+                <img src="images/ss5.png">
+                <img src="images/ss6.png">
+                <div class="layer">
+                    <h3>Khaga Pharmacy App</h3>
+                    <p>My first client project involved managing patient appointments and generating PDF reports. It includes a 
+                        photo capture feature for patient identification, referral list management, and OPD organization.</p>
                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/1668347229084.jpg">
+                <img src="images/ss1.png">
+                <img src="images/ss2.png">
+                <img src="images/ss3.png">
+                <img src="images/ss4.png">
+                <img src="images/ss5.png">
+                <img src="images/ss6.png">
                 <div class="layer">
                     <h3>Gallery App</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Reiciendis, architecto voluptatibus.
-                          Nulla dolor ad ullam dolore alias ratione ducimus quam architecto aspernatur libero maiores quasi a suscipit minima,
-                           ipsa hic!</p>
+                    <p>Introducing a fresh concept with swipe up or down navigation for media preview, inspired by modern social media platforms.
+                         Features include hidden media access via user-generated codes, social media-like UI with favorites, sharing, setting wallpaper, 
+                         and more options.</p>
                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
@@ -195,5 +206,45 @@ function opentab(tabname) {
         sidemeu.style.right = "-200px";
     }
    </script>
+<script>
+const isPhone = window.matchMedia("(max-width: 600px)").matches;
+
+if (isPhone) {
+    // Function to reset all active layers
+    function resetActiveLayers() {
+        const activeLayers = document.querySelectorAll('.layer.active');
+        activeLayers.forEach(layer => {
+            layer.classList.remove('active'); // Remove active class from all active layers
+        });
+    }
+
+    // Add event listener to each image
+    document.querySelectorAll('.work').forEach(item => {
+        item.addEventListener('click', event => {
+            const layer = item.querySelector('.layer');
+            const isActive = layer.classList.contains('active');
+
+            // Reset all active layers if clicked image's layer is not active
+            if (!isActive) {
+                resetActiveLayers();
+            }
+
+            // Toggle active class on click
+            layer.classList.toggle('active');
+
+            // Prevent click event from propagating to document body
+            event.stopPropagation();
+        });
+    });
+
+    // Add event listener to document body to reset the .layer element when clicked anywhere outside of it
+    document.body.addEventListener('click', event => {
+        resetActiveLayers(); // Reset all active layers
+    });
+}
+
+
+   </script>
+
 </body>
 </html>
