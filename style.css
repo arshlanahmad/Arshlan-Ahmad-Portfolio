@@ -224,16 +224,18 @@ position: relative;
     font-size: 18px; /* Increase the font size as needed */
     transition: 0.5s;
 }
-.layer p{
-    font-size: 20px;
-    font-style: unset;
+.layer h3 {
+    margin: -180px 0 10px; /* Adjusted margin */
+    font-size: 2.5vw; /* Using viewport width (vw) */
+    text-align: center;
+    margin-top: 10px;
 }
 
-.layer h3{
-    font-weight: 500;
-    font-size: 40px;
-    font-style: inherit;
-    margin-bottom: 20px;
+.layer p {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 1.5vw; /* Using viewport width (vw) */
+    color: #fff;
 }
 .layer a{
     margin-top: 20px;
