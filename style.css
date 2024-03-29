@@ -163,13 +163,12 @@ position: relative;
     margin-bottom: 30px;
 }
 .service-list div h2{
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 .service-list div p{
     font-size: 20px;
-    font-weight: 500;
     margin-bottom: 15px;
 }
 .service-list div a{
