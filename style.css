@@ -163,13 +163,16 @@ position: relative;
     margin-bottom: 30px;
 }
 .service-list div h2{
-    font-size: 35px;
-    font-weight: 500;
-    margin-bottom: 15px;
+    margin: -180px 0 10px; /* Adjusted margin */
+    font-size: 2.2vw; /* Using viewport width (vw) */
+
+    margin-top: 10px;
 }
 .service-list div p{
-    font-size: 20px;
-    margin-bottom: 15px;
+    margin: 0;
+    margin-top: 10px;
+    font-size: 1.3vw; /* Using viewport width (vw) */
+    color: #fff;
 }
 .service-list div a{
     text-decoration: none;
