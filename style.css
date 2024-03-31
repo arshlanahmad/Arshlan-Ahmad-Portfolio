@@ -11,18 +11,19 @@ body{
 background-color: #000000;
 color: #fff;
 }
-#header {
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/MyPhotoPng.png);
-    background-size: auto 100%; /* Set background image size to auto width and 100% height */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-    background-position: right; /* Set background image position to right */
-}
-.container{
+
+.container {
     padding: 10px 10%;
-    
+  
 }
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+    text-align: center; /* Center-align the header text horizontally */
+    margin-bottom: 250px; /* Add bottom margin to prevent next page from showing */
+}
+
 .container nav ul li {
     display: inline-block;
     margin-right: 50px; /* Adjust the margin as needed */
@@ -32,11 +33,12 @@ color: #fff;
     align-content: end;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 }
 nav ul li{
    display:  inline-block;
    list-style: none;
-   margin: 10px 50px;
+   margin: 10px 120px;
 
 
 }
@@ -46,6 +48,9 @@ nav ul li a{
     font-size: 25px;
     position: relative;
 }
+
+
+
 nav ul li a::after{
     content: '';
     width: 0;
@@ -59,11 +64,7 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
-.header-text{
-    margin-top: 20%;
-    font-size: 30px;
 
-}
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
@@ -178,7 +179,7 @@ position: relative;
     text-decoration: none;
     color: #fff;
     margin-top: 12px;
-    font-size: 15px;
+    font-size: 20px;
     display: inline-block;
 }
 .service-list div:hover{
@@ -199,7 +200,11 @@ position: relative;
     grid-template-columns: repeat(1, 1fr); /* Ensure each project is on its own line */
     grid-gap: 40px;
 }
+.click{
+    margin-top: 30px;
+    color: #e80850;
 
+}
 .work {
     margin-top: 50px;
     border-radius: 10px;
@@ -365,6 +370,7 @@ nav .fa-solid{
         font-size: 16px;
         
     }
+    
     .layer p{
         font-size: 10px;
 
@@ -373,11 +379,7 @@ nav .fa-solid{
         width: 30%; /* Make the image width 100% */
         height: auto; /* Maintain aspect ratio */
     }
-    
-    #header{
-        background-image: url(images/MyPhotoPng.png);
-        background-size: 60%; 
-    }
+
     .header-text{
         margin-top: 100%;
         font-size: 16px;
@@ -387,8 +389,15 @@ nav .fa-solid{
         font-size: 30px;
     }
     nav .fa-solid{
-        display: block;
-        font-size: 25px;
+            margin: 10px;
+            display: block;
+            font-size: 25px;
+            position: absolute;
+            top: 10px; /* Adjust the top position as needed */
+            right: 10px; /* Adjust the right position as needed */
+            cursor: pointer;
+        
+        
     }
     nav ul{
         background: #e80850;
